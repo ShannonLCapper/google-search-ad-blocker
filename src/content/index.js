@@ -7,7 +7,7 @@ function hideAds() {
         requestAnimationFrame(() => {
             element.style.maxHeight = `${height}px`;
             element.style.overflow = `hidden`;
-            element.style.transition = `max-height 0.3s ease-out, opacity 0.3s ease-out`;
+            element.style.transition = `max-height 0.2s ease-out, opacity 0.2s ease-out`;
             // Wait for the maxHeight styles to take effect, then animate to 0 with a fade
             requestAnimationFrame(() => {
                 element.style.opacity = `0`;
