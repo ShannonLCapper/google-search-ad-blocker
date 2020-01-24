@@ -1,5 +1,7 @@
+const AD_SELECTOR = `[aria-label='Ads']`;
+
 function hideAds() {
-    const ads = Array.from(document.querySelectorAll(`[aria-label='Ads']`));
+    const ads = Array.from(document.querySelectorAll(AD_SELECTOR));
     const adData = ads.map(ad => ({ element: ad, height: ad.clientHeight }));
     adData.forEach(({ element, height }) => {
         requestAnimationFrame(() => {
